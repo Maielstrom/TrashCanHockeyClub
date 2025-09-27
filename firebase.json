@@ -6,13 +6,13 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [      <-- ADD THIS SECTION
+    "rewrites": [     
       {
         "source": "**",
         "destination": "/index.html"
       }
     ],
-    "headers": [       <-- ADD THIS SECTION
+    "headers": [       
       {
         "source": "**/*.html",
         "headers": [
