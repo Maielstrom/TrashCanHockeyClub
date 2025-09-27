@@ -5,6 +5,23 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [      <-- ADD THIS SECTION
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [       <-- ADD THIS SECTION
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/html; charset=utf-8"
+          }
+        ]
+      }
     ]
   }
 }
